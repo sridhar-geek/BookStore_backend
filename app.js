@@ -23,6 +23,10 @@ app.use(cors())
 //         allowedHeaders: ['Content-Type']
 //     }
 //     ))
+
+app.get('/', (req, res) => {
+    res.send('Welcome to BookStore')
+})
     /* Middleware */
 app.use( '/books', Routes)
 
